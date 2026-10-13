@@ -5,28 +5,54 @@
 </p>
 
 <p align="center">
-  <a href="https://mint-sjtu.github.io/MorphAct.io/">
-    <img src="https://img.shields.io/badge/Project-Page-2563EB?style=for-the-badge" alt="项目主页" />
-  </a>
-  &nbsp;
-  <a href="#" title="论文即将发布">
-    <img src="https://img.shields.io/badge/arXiv-Coming_Soon-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="arXiv — 即将发布" />
-  </a>
+  Ziyan Liu<sup>*</sup> · <a href="https://jitingliu.com/">Jiting Liu</a><sup>*</sup> · Weihong Zhong<sup>*</sup> · Wenda Yu · Yeqiu Chen<br>
+  Jason Li · Xiaojiang Peng · Shuyuan Hu · <a href="https://kaiwang960112.github.io/">Kai Wang</a><sup>†</sup> · <a href="https://www.bozhao.me/">Bo Zhao</a><sup>†</sup>
 </p>
+
+<p align="center"><sub>* 共同贡献。† 通讯作者。</sub></p>
+
+<table align="center">
+  <tr>
+    <th width="200" align="center">🌐 项目主页</th>
+    <th width="200" align="center">📄 arXiv</th>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://mint-sjtu.github.io/MorphAct.io/">Website</a></td>
+    <td align="center"><a href="#" title="论文即将发布">Coming soon</a></td>
+  </tr>
+</table>
 
 <p align="center">
   <a href="README.md">English</a> · <strong>简体中文</strong>
 </p>
 
-MorphAct 是一个**面向 VLA 的插件式动态参数生成框架**。它根据当前交互情境生成参数更新，让同一个策略在任务执行过程中动态调整感知与控制。
+**MorphAct 让视觉–语言–动作模型随情境动态适配。** 它学习共享的适配规则，随着交互推进，为感知与控制生成协同的参数更新，在不同模型架构和机器人操作基准上带来一致的性能提升。
 
-## 方法
+![MorphAct：通过适配后的表示耦合感知与控制的参数生成。](assets/morphact-method.png)
 
-即使是同一个操作任务，接近物体、建立接触、搬运和精确放置时的感知与控制需求也各不相同。这些情境会对策略提出不同的适配需求。
+## 实验结果（%）
 
-MorphAct 学习一套**共享的适配规则**，根据当前情境生成低秩参数更新，协同调整视觉语言模块与动作模块，使同一个策略能够适应交互过程中的变化。这一机制可以作为插件接入现有 VLA，沿用骨干原有的动作建模方式。
+### LIBERO
 
-![MorphAct：共享适配规则，根据交互情境生成不同的参数更新。](assets/morphact-teaser.png)
+| 骨干 | 方法 | Spatial | Object | Goal | Long | Mean | 方差 (pp²) |
+|---|---|---:|---:|---:|---:|---:|---:|
+| X-VLA | Baseline | 95.40 | 96.60 | 96.00 | 84.20 | 93.05 | — |
+| X-VLA | MorphAct | 98.67 | 99.87 | 97.07 | 93.20 | **97.20** | 0.0300 |
+| π0 | Baseline | 96.80 | 98.80 | 95.80 | 85.20 | 94.15 | — |
+| π0 | MorphAct | 98.00 | 99.60 | 96.60 | 92.40 | **96.65** | 0.0517 |
+| π0.5 | Baseline | 98.80 | 98.20 | 98.00 | 92.40 | 96.85 | — |
+| π0.5 | MorphAct | 98.33 | 99.67 | 98.87 | 97.53 | **98.60** | 0.0525 |
+
+### Meta-World
+
+| 骨干 | 方法 | Easy | Medium | Hard | Very Hard | Avg. | 方差 (pp²) |
+|---|---|---:|---:|---:|---:|---:|---:|
+| X-VLA | Baseline | 72.50 | 46.36 | 48.30 | 55.00 | 55.54 | — |
+| X-VLA | MorphAct | 83.99 | 58.18 | 55.28 | 55.00 | **63.11** | 1.8400 |
+| π0 | Baseline | 77.90 | 51.80 | 53.30 | 20.00 | 50.75 | — |
+| π0 | MorphAct | 82.44 | 71.36 | 56.39 | 58.00 | **67.05** | 0.6342 |
+| π0.5 | Baseline | 70.50 | 45.00 | 38.30 | 41.00 | 48.70 | — |
+| π0.5 | MorphAct | 85.77 | 59.85 | 66.39 | 45.67 | **64.42** | 0.3970 |
 
 ## 预训练模型
 
@@ -61,30 +87,6 @@ bash tools/evaluate.sh pi05 metaworld
 
 使用 π0 时将模型参数换为 `pi0`。X-VLA 的安装和推理见 [X-VLA 指南](xvla/README.zh-CN.md)。评测产物和得分定义见[评测指南](docs/evaluation.zh-CN.md#输出)。
 
-## 实验结果（%）
-
-### LIBERO
-
-| 骨干 | 方法 | Spatial | Object | Goal | Long | Mean | 方差 (pp²) |
-|---|---|---:|---:|---:|---:|---:|---:|
-| X-VLA | Baseline | 95.40 | 96.60 | 96.00 | 84.20 | 93.05 | — |
-| X-VLA | MorphAct | 98.67 | 99.87 | 97.07 | 93.20 | **97.20** | 0.0300 |
-| π0 | Baseline | 96.80 | 98.80 | 95.80 | 85.20 | 94.15 | — |
-| π0 | MorphAct | 98.00 | 99.60 | 96.60 | 92.40 | **96.65** | 0.0517 |
-| π0.5 | Baseline | 98.80 | 98.20 | 98.00 | 92.40 | 96.85 | — |
-| π0.5 | MorphAct | 98.33 | 99.67 | 98.87 | 97.53 | **98.60** | 0.0525 |
-
-### Meta-World
-
-| 骨干 | 方法 | Easy | Medium | Hard | Very Hard | Avg. | 方差 (pp²) |
-|---|---|---:|---:|---:|---:|---:|---:|
-| X-VLA | Baseline | 72.50 | 46.36 | 48.30 | 55.00 | 55.54 | — |
-| X-VLA | MorphAct | 83.99 | 58.18 | 55.28 | 55.00 | **63.11** | 1.8400 |
-| π0 | Baseline | 77.90 | 51.80 | 53.30 | 20.00 | 50.75 | — |
-| π0 | MorphAct | 82.44 | 71.36 | 56.39 | 58.00 | **67.05** | 0.6342 |
-| π0.5 | Baseline | 70.50 | 45.00 | 38.30 | 41.00 | 48.70 | — |
-| π0.5 | MorphAct | 85.77 | 59.85 | 66.39 | 45.67 | **64.42** | 0.3970 |
-
 ## 训练
 
 如需在自己的数据上训练 MorphAct，请参考 [π0 / π0.5 训练指南](openpi/README.zh-CN.md#训练)或 [X-VLA 训练指南](xvla/README.zh-CN.md#训练)。
@@ -92,6 +94,11 @@ bash tools/evaluate.sh pi05 metaworld
 ## 致谢
 
 骨干集成使用了 OpenPI 和 X-VLA。
+
+## 联系我们
+
+- **Ziyan Liu：**[liuziyan@mail.ustc.edu.cn](mailto:liuziyan@mail.ustc.edu.cn)
+- **Jiting Liu：**[liujiting616@gmail.com](mailto:liujiting616@gmail.com)
 
 ## 许可证
 
