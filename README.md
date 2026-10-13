@@ -26,7 +26,9 @@
   <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-Perceptual and control demands change across tasks and interactions, while conventional robot policies use fixed parameters. We introduce **MorphAct**, which generates context-dependent parameter updates to adapt perception and action together.
+Robot policies must accommodate diverse perceptual and control demands, even within a single task. Reaching, making contact, and placing an object precisely require different visual cues and control behaviors, yet conventional fine-tuning fits one fixed parameter update to all of them. When these demands favor competing adjustments, a shared policy faces adaptation trade-offs.
+
+We introduce **MorphAct**, which learns a shared adaptation rule that generates parameter updates for the current interaction. Two coupled generators adapt perception and action together: the adapted scene representation guides the generation of action-side updates. This allows one policy to specialize its effective weights as the interaction unfolds, using the current observations, instruction, and robot state.
 
 ![MorphAct adapts perception and action together as the interaction changes.](assets/morphact-method.png)
 
