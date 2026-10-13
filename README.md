@@ -26,19 +26,13 @@
   <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-**MorphAct lets robot policies adapt their effective weights to the current interaction.** Perceptual and control demands change across environments and tasks, and even between stages of one task. Conventional vision–language–action (VLA) policies respond through context-conditioned activations and actions, while their effective weights stay fixed during execution. MorphAct learns a shared parameter-generation rule whose updates change with the context.
+Robot policies are learning to do more, in more places. Even a simple instruction—“put the object in the tray”—calls for reaching, making contact, carrying, and precise placement. Each stage asks something different of perception and control. A conventional robot policy brings one fixed set of learned parameters to all of these demands; as tasks and environments multiply, those parameters must reconcile increasingly different ways of seeing and acting.
 
-Local diagnostics on 65 RoboCasa365 atomic tasks reveal competing update directions in both vision–language and action parameters, with opposing parameter-group contributions cancelling within a module. These findings motivate contextual adaptation.
+**MorphAct lets the policy change with the interaction.** It learns a shared adaptation rule that generates parameter updates for the current situation, giving one robot policy the flexibility to specialize as it acts. Perception and action adapt together: the policy’s updated understanding of the scene shapes how it prepares to move.
 
-![MorphAct: representation-coupled parameter generation for perception and control.](assets/morphact-method.png)
+MorphAct improves three robot policies on LIBERO and Meta-World, raising average success by up to **16.30 percentage points**. Real-world gains reach **14 points** across four manipulation tasks.
 
-## How it works
-
-1. **Adapt perception.** A vision–language generator reads observation and instruction embeddings and generates updates for the VLM, which produces adapted representations.
-2. **Adapt control.** An action generator uses those adapted representations and robot state to generate updates for the action module.
-3. **Train jointly.** Both generators learn through the backbone's native action objective, without operation labels or expert-adapter targets.
-
-Low-rank factors make the generated updates efficient. Updates are refreshed at each replanning observation and reused throughout action-chunk prediction.
+![MorphAct adapts perception and action together as the interaction changes.](assets/morphact-method.png)
 
 ## Results (%)
 
