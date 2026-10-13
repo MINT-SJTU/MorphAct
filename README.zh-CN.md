@@ -26,7 +26,7 @@
   <a href="README.md">English</a> · <strong>简体中文</strong>
 </p>
 
-**MorphAct** 根据当前交互生成参数更新，让同一个机器人策略的感知与行动协同适配。
+机器人的感知与控制需求随任务和交互不断变化，而传统策略使用固定参数。为此，我们提出 **MorphAct**，根据当前情境生成参数更新，协同适配感知与行动。
 
 ![MorphAct 让感知与行动随当前交互协同适配。](assets/morphact-method.png)
 

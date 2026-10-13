@@ -26,7 +26,7 @@
   <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-**MorphAct** generates parameter updates for the current interaction, adapting perception and action together within a shared robot policy.
+Perceptual and control demands change across tasks and interactions, while conventional robot policies use fixed parameters. We introduce **MorphAct**, which generates context-dependent parameter updates to adapt perception and action together.
 
 ![MorphAct adapts perception and action together as the interaction changes.](assets/morphact-method.png)
 
