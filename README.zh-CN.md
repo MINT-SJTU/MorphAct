@@ -1,8 +1,4 @@
-<h1 align="center">MorphAct</h1>
-
-<p align="center">
-  <strong>让机器人策略随其所处世界而变化</strong>
-</p>
+<h1 align="center"><img src="assets/morphact-title-zh.svg" width="749" alt="MorphAct：让机器人策略随其所处世界而变化"></h1>
 
 <p align="center">
   Ziyan Liu<sup>*</sup> · <a href="https://jitingliu.com/">Jiting Liu</a><sup>*</sup> · Weihong Zhong<sup>*</sup> · Wenda Yu · Yeqiu Chen<br>
@@ -11,16 +7,12 @@
 
 <p align="center"><sub>* 共同贡献。† 通讯作者。</sub></p>
 
-<table align="center">
-  <tr>
-    <th width="200" align="center">🌐 项目主页</th>
-    <th width="200" align="center">📄 arXiv</th>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://mint-sjtu.github.io/MorphAct.io/">Website</a></td>
-    <td align="center"><a href="#" title="论文即将发布">Coming soon</a></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://mint-sjtu.github.io/MorphAct.io/"><img src="https://img.shields.io/badge/Project-Page-4C7A67?style=flat-square" height="22" alt="项目主页"></a>
+  <img src="https://img.shields.io/badge/Paper-Coming_soon-8C8C8C?style=flat-square&amp;logo=arxiv&amp;logoColor=white" height="22" alt="论文即将发布">
+  <a href="https://huggingface.co/MINT-SJTU/MorphAct-Metaworld"><img src="https://img.shields.io/badge/Models-Hugging_Face-C99747?style=flat-square&amp;logo=huggingface&amp;logoColor=white" height="22" alt="Hugging Face 模型"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/Code-MIT-68758A?style=flat-square" height="22" alt="自研代码采用 MIT 许可证"></a>
+</p>
 
 <p align="center">
   <a href="README.md">English</a> · <strong>简体中文</strong>
@@ -32,7 +24,7 @@
 
 ![MorphAct 让感知与行动随当前交互协同适配。](assets/morphact-method.png)
 
-## 实验结果（%）
+## 📊 实验结果（%）
 
 ### LIBERO
 
@@ -56,7 +48,7 @@
 | π0.5 | Baseline | 70.50 | 45.00 | 38.30 | 41.00 | 48.70 | — |
 | π0.5 | MorphAct | 85.77 | 59.85 | 66.39 | 45.67 | **64.42** | 0.3970 |
 
-## 预训练模型
+## 🤗 预训练模型
 
 三种骨干的 Meta-World 预训练适配器可从 [MINT-SJTU/MorphAct-Metaworld](https://huggingface.co/MINT-SJTU/MorphAct-Metaworld) 下载。LIBERO 预训练权重 Coming soon。
 
@@ -70,7 +62,7 @@
 
 基座模型路径与推理命令：[π0 / π0.5](openpi/README.zh-CN.md) · [X-VLA](xvla/README.zh-CN.md)。
 
-## 快速开始
+## 🚀 快速开始
 
 使用带 NVIDIA GPU 的 Linux 环境，并安装 `uv`。以下命令均在仓库根目录执行，并准备好 π0.5 基座模型和 `pi05-metaworld` 检查点：
 
@@ -89,7 +81,7 @@ bash tools/evaluate.sh pi05 metaworld
 
 使用 π0 时将模型参数换为 `pi0`。X-VLA 的安装和推理见 [X-VLA 指南](xvla/README.zh-CN.md)。评测产物和得分定义见[评测指南](docs/evaluation.zh-CN.md#输出)。
 
-## 训练
+## 🛠️ 训练
 
 如需在自己的数据上训练 MorphAct，请参考 [π0 / π0.5 训练指南](openpi/README.zh-CN.md#训练)或 [X-VLA 训练指南](xvla/README.zh-CN.md#训练)。
 

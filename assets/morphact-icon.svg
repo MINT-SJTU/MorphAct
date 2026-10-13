@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="22 28 474 442" role="img" aria-labelledby="title desc">
+  <title id="title">MorphAct — adaptive robot emblem</title>
+  <desc id="desc">A friendly robot with an articulated, unfolding crown. Dusty-blue and sage armor plates suggest contextual transformation. Original editable vector paths, no embedded bitmap or fonts.</desc>
+  <g id="unfolding-armor" stroke="#35444B" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+    <path id="outer-sage-plate" fill="#A9B5A5" d="M 302 98 L 351 49 C 356 44 363 43 368 48 L 455 124 C 462 130 464 137 460 145 L 440 185 L 380 164 Z"/>
+    <path id="outer-sage-inset" fill="#D6DDD0" stroke="none" d="M 353 63 L 438 137 L 429 155 L 361 112 L 324 97 Z"/>
+    <path id="blue-plate" fill="#91A9B5" d="M 251 124 L 295 71 C 300 66 308 65 314 69 L 414 134 C 422 139 427 147 424 157 L 411 209 L 342 198 Z"/>
+    <path id="blue-plate-inset" fill="#C6D3D8" stroke="none" d="M 297 85 L 402 151 L 399 171 L 296 115 L 274 115 Z"/>
+  </g>
+  <g id="robot-shell" stroke="#35444B" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+    <path id="right-shell" fill="#8D9F9D" d="M 337 152 L 413 173 C 433 179 444 199 441 222 L 426 330 C 423 349 415 364 399 375 L 340 415 L 291 351 Z"/>
+    <path id="side-ear" fill="#C2CAC2" d="M 420 231 L 440 229 C 451 228 458 237 456 248 L 449 296 C 447 307 439 314 429 313 L 411 310 Z"/>
+    <path id="side-ear-inset" fill="none" stroke-width="7" d="M 438 249 L 432 288"/>
+    <path id="left-ear" fill="#AABAC0" d="M 100 227 L 80 231 C 68 233 62 243 64 255 L 73 302 C 75 313 82 318 94 316 L 111 313 Z"/>
+    <path id="face-shell" fill="#E5E4DA" d="M 121 163 L 251 135 C 267 132 281 134 295 139 L 351 160 C 367 166 376 180 376 197 L 371 338 C 371 358 361 376 344 389 L 295 426 C 282 436 266 440 251 436 L 146 410 C 127 405 115 392 111 374 L 86 221 C 82 194 94 173 121 163 Z"/>
+    <path id="lower-jaw-shade" fill="#CAD0C7" stroke="none" d="M 120 345 L 143 369 L 255 397 C 269 400 283 397 295 389 L 363 346 C 360 360 354 371 342 380 L 289 420 C 280 427 267 430 255 426 L 150 401 C 135 397 125 386 122 370 Z"/>
+    <path id="crown-fold" fill="#C4D0D0" d="M 105 184 L 239 159 C 255 156 268 156 281 161 L 353 185 L 326 222 L 269 207 L 248 225 L 212 213 L 122 231 Z"/>
+    <path id="forehead-seam" fill="none" stroke-width="6" d="M 246 162 L 251 192"/>
+  </g>
+  <g id="expression">
+    <path id="visor" fill="#35444B" d="M 144 236 L 209 226 C 219 224 229 229 238 237 L 250 248 L 267 237 C 276 231 286 232 298 236 L 331 247 C 345 252 351 262 350 278 L 347 305 C 346 325 331 341 309 347 L 274 358 C 263 361 252 360 239 357 L 169 339 C 149 334 138 321 134 302 L 128 263 C 126 248 131 240 144 236 Z"/>
+    <path id="left-eye" fill="#F1F1E8" d="M 176 261 C 183 259 189 264 190 272 L 194 299 C 195 307 191 314 184 314 C 176 314 172 309 171 302 L 167 275 C 166 268 169 263 176 261 Z"/>
+    <path id="right-eye" fill="#F1F1E8" d="M 297 270 C 304 272 307 277 306 285 L 304 310 C 303 318 298 322 291 320 C 284 318 282 313 283 306 L 285 282 C 286 273 290 269 297 270 Z"/>
+    <path id="chin-detail" fill="none" stroke="#73857F" stroke-width="7" stroke-linecap="round" d="M 230 388 L 260 395 L 282 382"/>
+  </g>
+  <g id="transformation-accents" fill="none" stroke="#8D9F9D" stroke-width="7" stroke-linecap="round">
+    <path d="M 447 74 L 462 58"/>
+    <path d="M 464 94 L 486 87"/>
+  </g>
+</svg>

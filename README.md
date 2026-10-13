@@ -1,8 +1,4 @@
-<h1 align="center">MorphAct</h1>
-
-<p align="center">
-  <strong>Robot Policies Morphing with the Worlds They Act In</strong>
-</p>
+<h1 align="center"><img src="assets/morphact-title-en.svg" width="960" alt="MorphAct: Robot Policies Morphing with the Worlds They Act In"></h1>
 
 <p align="center">
   Ziyan Liu<sup>*</sup> · <a href="https://jitingliu.com/">Jiting Liu</a><sup>*</sup> · Weihong Zhong<sup>*</sup> · Wenda Yu · Yeqiu Chen<br>
@@ -11,16 +7,12 @@
 
 <p align="center"><sub>* Equal contribution. † Corresponding authors.</sub></p>
 
-<table align="center">
-  <tr>
-    <th width="200" align="center">🌐 Project Page</th>
-    <th width="200" align="center">📄 arXiv</th>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://mint-sjtu.github.io/MorphAct.io/">Website</a></td>
-    <td align="center"><a href="#" title="Paper coming soon">Coming soon</a></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://mint-sjtu.github.io/MorphAct.io/"><img src="https://img.shields.io/badge/Project-Page-4C7A67?style=flat-square" height="22" alt="Project Page"></a>
+  <img src="https://img.shields.io/badge/Paper-Coming_soon-8C8C8C?style=flat-square&amp;logo=arxiv&amp;logoColor=white" height="22" alt="Paper: coming soon">
+  <a href="https://huggingface.co/MINT-SJTU/MorphAct-Metaworld"><img src="https://img.shields.io/badge/Models-Hugging_Face-C99747?style=flat-square&amp;logo=huggingface&amp;logoColor=white" height="22" alt="Hugging Face models"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/Code-MIT-68758A?style=flat-square" height="22" alt="Code: MIT license"></a>
+</p>
 
 <p align="center">
   <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
@@ -32,7 +24,7 @@ We introduce **MorphAct**, which learns a shared adaptation rule that generates 
 
 ![MorphAct adapts perception and action together as the interaction changes.](assets/morphact-method.png)
 
-## Results (%)
+## 📊 Results (%)
 
 ### LIBERO
 
@@ -56,7 +48,7 @@ We introduce **MorphAct**, which learns a shared adaptation rule that generates 
 | π0.5 | Baseline | 70.50 | 45.00 | 38.30 | 41.00 | 48.70 | — |
 | π0.5 | MorphAct | 85.77 | 59.85 | 66.39 | 45.67 | **64.42** | 0.3970 |
 
-## Pretrained models
+## 🤗 Pretrained models
 
 Download the Meta-World pretrained adapters for all three backbones from [MINT-SJTU/MorphAct-Metaworld](https://huggingface.co/MINT-SJTU/MorphAct-Metaworld). LIBERO pretrained adapters are coming soon.
 
@@ -70,7 +62,7 @@ Place each downloaded adapter under `ckpt/adapters/` using this directory name:
 
 Base-model paths and inference commands: [π0 / π0.5](openpi/README.md) · [X-VLA](xvla/README.md).
 
-## Quick start
+## 🚀 Quick start
 
 On Linux with an NVIDIA GPU and `uv`, run these commands from the repository root with the π0.5 base model and `pi05-metaworld` checkpoint:
 
@@ -89,7 +81,7 @@ bash tools/evaluate.sh pi05 metaworld
 
 Use `pi0` for π0. X-VLA installation and inference are described in the [X-VLA guide](xvla/README.md). Evaluation outputs and score definitions are documented in the [evaluation guide](docs/evaluation.md#outputs).
 
-## Training
+## 🛠️ Training
 
 To train MorphAct on your own data, see [π0 / π0.5 training](openpi/README.md#training) or [X-VLA training](xvla/README.md#training).
 
