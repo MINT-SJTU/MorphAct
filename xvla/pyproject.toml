@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "morphact-xvla"
+version = "0.1.0"
+description = "VLA Policy Generation X-VLA integration"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "morphact==0.1.0",
+    "huggingface-hub>=0.30",
+    "torchvision==0.22.1",
+    "transformers==4.51.3",
+    "timm==1.0.12",
+    "safetensors>=0.5",
+    "pillow>=10",
+]
+
+[project.optional-dependencies]
+train = [
+    "accelerate==1.2.1",
+    "mmengine==0.10.5",
+    "h5py>=3.12",
+    "scipy>=1.13,<2",
+    "numpy>=1.26,<2",
+    "opencv-python==4.11.0.86",
+    "pyarrow>=20",
+    "av>=15",
+]
+serve = ["fastapi>=0.115", "uvicorn>=0.34", "json-numpy==2.1.0"]
+
+[project.scripts]
+xvla-morphact-train = "morphact_xvla.train:main"
+xvla-morphact-serve = "morphact_xvla.serve:main"
+xvla-morphact-train-metaworld = "morphact_xvla.train_metaworld:main"
+xvla-morphact-serve-metaworld = "morphact_xvla.serve_metaworld:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["morphact_xvla*"]
+namespaces = true
+
+[tool.setuptools]
+
+[tool.uv.sources]
+morphact = { path = "..", editable = true }

@@ -1,0 +1,14 @@
+# Keep the evaluator separate from OpenPI's older Gymnasium/LeRobot environment.
+metaworld==3.0.0
+mujoco==3.3.0
+gymnasium==1.2.1
+numpy==1.26.4
+packaging>=24.0
+pillow==11.2.1
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
+websockets==15.0.1
+msgpack==1.1.0
+typing-extensions>=4.12.2
+dm-tree>=0.1.8
+tyro==0.9.22

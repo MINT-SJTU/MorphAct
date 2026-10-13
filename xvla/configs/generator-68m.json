@@ -1,0 +1,15 @@
+{
+  "generator_dim": 640,
+  "generator_head_dim": 128,
+  "generator_token_dim": 1024,
+  "dim_accumulation": 4,
+  "vlm_generator_blocks": 4,
+  "action_generator_blocks": 4,
+  "vlm_rank": 8,
+  "vlm_alpha": 16,
+  "action_rank": 8,
+  "action_alpha": 16,
+  "factor_init_std": 0.01,
+  "compute_precision": "bfloat16",
+  "gradient_checkpointing": true
+}

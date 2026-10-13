@@ -1,0 +1,7 @@
+Native X-VLA source
+
+Source: https://github.com/2toinf/X-VLA
+Commit: 6bc2513f5f1cbec715cc668b414392a6cae5c671
+License: Apache-2.0; see LICENSE.
+
+models/ and datasets/ Python sources are imported from this revision into native/models/ and native/data/. MorphAct adapts package imports, retains the LIBERO data handler, and separates model use from optional serving dependencies. The bundled Florence implementation initializes its image-position and visual-position parameters independently. MorphAct parameter generation and the MetaWorld integration are maintained outside the native modules.

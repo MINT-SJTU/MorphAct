@@ -1,0 +1,11 @@
+Original MorphAct code is licensed under MIT; see LICENSE.
+
+MorphAct incorporates the following third-party components.
+
+openpi/ incorporates Physical Intelligence OpenPI. Its Apache-2.0 license is
+in openpi/LICENSE; the included Gemma terms are in openpi/LICENSE_GEMMA.txt.
+
+xvla/ incorporates 2toinf/X-VLA and its Florence components. See xvla/LICENSE,
+xvla/NOTICE, and retained source headers for attribution and local modifications.
+
+Component licenses remain applicable to their respective source files.
