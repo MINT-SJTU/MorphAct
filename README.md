@@ -26,11 +26,7 @@
   <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-Robot policies are learning to do more, in more places. Even a simple instruction—“put the object in the tray”—calls for reaching, making contact, carrying, and precise placement. Each stage asks something different of perception and control. A conventional robot policy brings one fixed set of learned parameters to all of these demands; as tasks and environments multiply, those parameters must reconcile increasingly different ways of seeing and acting.
-
-**MorphAct lets the policy change with the interaction.** It learns a shared adaptation rule that generates parameter updates for the current situation, giving one robot policy the flexibility to specialize as it acts. Perception and action adapt together: the policy’s updated understanding of the scene shapes how it prepares to move.
-
-MorphAct improves three robot policies on LIBERO and Meta-World, raising average success by up to **16.30 percentage points**. Real-world gains reach **14 points** across four manipulation tasks.
+**MorphAct** generates parameter updates for the current interaction, adapting perception and action together within a shared robot policy.
 
 ![MorphAct adapts perception and action together as the interaction changes.](assets/morphact-method.png)
 
