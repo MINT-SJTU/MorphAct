@@ -1,8 +1,22 @@
-# MorphAct
+<h1 align="center">MorphAct</h1>
 
-[English](README.md) | **简体中文**
+<p align="center">
+  <strong>视觉–语言–动作模型的上下文参数化</strong>
+</p>
 
-**视觉–语言–动作模型的上下文参数化**
+<p align="center">
+  <a href="https://mint-sjtu.github.io/MorphAct.io/">
+    <img src="https://img.shields.io/badge/Project-Page-2563EB?style=for-the-badge" alt="项目主页" />
+  </a>
+  &nbsp;
+  <a href="#" title="论文即将发布">
+    <img src="https://img.shields.io/badge/arXiv-Coming_Soon-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="arXiv — 即将发布" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> · <strong>简体中文</strong>
+</p>
 
 MorphAct 是一个**面向 VLA 的插件式动态参数生成框架**。它根据当前交互情境生成参数更新，让同一个策略在任务执行过程中动态调整感知与控制。
 

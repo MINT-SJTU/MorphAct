@@ -1,8 +1,22 @@
-# MorphAct
+<h1 align="center">MorphAct</h1>
 
-**English** | [简体中文](README.zh-CN.md)
+<p align="center">
+  <strong>Contextual Parameterization of Vision–Language–Action Models</strong>
+</p>
 
-**Contextual Parameterization of Vision–Language–Action Models**
+<p align="center">
+  <a href="https://mint-sjtu.github.io/MorphAct.io/">
+    <img src="https://img.shields.io/badge/Project-Page-2563EB?style=for-the-badge" alt="Project Page" />
+  </a>
+  &nbsp;
+  <a href="#" title="Paper coming soon">
+    <img src="https://img.shields.io/badge/arXiv-Coming_Soon-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="arXiv — Coming soon" />
+  </a>
+</p>
+
+<p align="center">
+  <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
+</p>
 
 MorphAct is a **plug-in framework for dynamic parameter generation in VLA models**. It generates context-dependent parameter updates, allowing one policy to adapt its perception and control as an interaction unfolds.
 
