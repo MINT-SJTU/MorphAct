@@ -1,7 +1,7 @@
 <h1 align="center">MorphAct</h1>
 
 <p align="center">
-  <strong>Contextual Parameterization of Vision–Language–Action Models</strong>
+  <strong>Robot Policies Morphing with the Worlds They Act In</strong>
 </p>
 
 <p align="center">
@@ -26,9 +26,19 @@
   <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-**MorphAct enables contextual specialization in vision–language–action models.** It learns a shared adaptation rule that generates coordinated parameter updates for perception and control as interactions unfold, delivering consistent gains across model architectures and manipulation benchmarks.
+**MorphAct lets robot policies adapt their effective weights to the current interaction.** Perceptual and control demands change across environments and tasks, and even between stages of one task. Conventional vision–language–action (VLA) policies respond through context-conditioned activations and actions, while their effective weights stay fixed during execution. MorphAct learns a shared parameter-generation rule whose updates change with the context.
+
+Local diagnostics on 65 RoboCasa365 atomic tasks reveal competing update directions in both vision–language and action parameters, with opposing parameter-group contributions cancelling within a module. These findings motivate contextual adaptation.
 
 ![MorphAct: representation-coupled parameter generation for perception and control.](assets/morphact-method.png)
+
+## How it works
+
+1. **Adapt perception.** A vision–language generator reads observation and instruction embeddings and generates updates for the VLM, which produces adapted representations.
+2. **Adapt control.** An action generator uses those adapted representations and robot state to generate updates for the action module.
+3. **Train jointly.** Both generators learn through the backbone's native action objective, without operation labels or expert-adapter targets.
+
+Low-rank factors make the generated updates efficient. Updates are refreshed at each replanning observation and reused throughout action-chunk prediction.
 
 ## Results (%)
 
