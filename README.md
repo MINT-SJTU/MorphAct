@@ -18,9 +18,9 @@
   <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-Robot policies must accommodate diverse perceptual and control demands, even within a single task. Reaching, making contact, and placing an object precisely require different visual cues and control behaviors, yet conventional fine-tuning fits one fixed parameter update to all of them. When these demands favor competing adjustments, a shared policy faces adaptation trade-offs.
+Scaling robot learning across diverse environments and interactions brings different perceptual and control demands into one shared policy. These demands vary across tasks and within a single interaction, yet conventional policies use the same effective weights across contexts. Our operation-level diagnostics reveal competing update directions: an update that reduces one task’s batch loss can increase loss on others. This motivates sharing the adaptation mechanism while allowing its updates to vary with context.
 
-We introduce **MorphAct**, which learns a shared adaptation rule that generates parameter updates for the current interaction. Two coupled generators adapt perception and action together: the adapted scene representation guides the generation of action-side updates. This allows one policy to specialize its effective weights as the interaction unfolds, using the current observations, instruction, and robot state.
+We introduce **MorphAct**, a contextual parameterization framework that lets robot policies adapt their effective weights as interaction contexts change. Observations and instructions guide vision–language parameter generation; the resulting adapted representations, together with the robot state, then guide action-side parameter generation. Both generators learn jointly through the policy’s native action objective, without operation labels or test-time optimization.
 
 ![MorphAct adapts perception and action together as the interaction changes.](assets/morphact-method.png)
 
