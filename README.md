@@ -17,11 +17,15 @@
   <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-Scaling robot learning across diverse environments and interactions brings different perceptual and control demands into one shared policy. These demands vary across tasks and within a single interaction, yet conventional policies use the same effective weights across contexts. Our operation-level diagnostics reveal competing update directions: an update that reduces one task’s batch loss can increase loss on others. This motivates sharing the adaptation mechanism while allowing its updates to vary with context.
-
-We introduce **MorphAct**, a contextual parameterization framework that lets robot policies adapt their effective weights as interaction contexts change. Observations and instructions guide vision–language parameter generation; the resulting adapted representations, together with the robot state, then guide action-side parameter generation. Both generators learn jointly through the policy’s native action objective, without operation labels or test-time optimization.
+Scaling robot learning brings diverse perceptual and control demands into one shared policy, across tasks and within a single interaction. Conventional policies keep their effective weights fixed across contexts. **MorphAct** learns a shared adaptation rule that generates **context-dependent parameter updates**, coupling vision–language and action adaptation through the representations used for control.
 
 ![MorphAct adapts perception and action together as the interaction changes.](assets/morphact-method.png)
+
+- **Operation-level evidence.** Different operations can favor competing parameter updates; our diagnostics show that reducing one task’s batch loss can increase loss on others.
+- **Representation-coupled generation.** Observations and instructions guide vision–language updates; the adapted representations and robot state then guide action-side parameter generation.
+- **Joint learning.** Both generators learn through the native action objective, without operation labels or test-time optimization. Their weights are shared across contexts.
+
+*See results and robot demos on the [project page](https://mint-sjtu.github.io/MorphAct.io/).*
 
 ## 📊 Results (%)
 
