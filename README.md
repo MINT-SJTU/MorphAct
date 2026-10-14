@@ -8,10 +8,9 @@
 <p align="center"><sub>* Equal contribution. † Corresponding authors.</sub></p>
 
 <p align="center">
-  <a href="https://mint-sjtu.github.io/MorphAct.io/"><img src="https://img.shields.io/badge/Project-Page-4C7A67?style=flat-square" height="22" alt="Project Page"></a>
-  <img src="https://img.shields.io/badge/Paper-Coming_soon-8C8C8C?style=flat-square&amp;logo=arxiv&amp;logoColor=white" height="22" alt="Paper: coming soon">
-  <a href="https://huggingface.co/MINT-SJTU/MorphAct-Metaworld"><img src="https://img.shields.io/badge/Models-Hugging_Face-C99747?style=flat-square&amp;logo=huggingface&amp;logoColor=white" height="22" alt="Hugging Face models"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/Code-MIT-68758A?style=flat-square" height="22" alt="Code: MIT license"></a>
+  <a href="https://mint-sjtu.github.io/MorphAct.io/"><img src="https://img.shields.io/badge/Project-Page-green?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" height="22" alt="Project Page"></a>
+  <img src="https://img.shields.io/badge/Paper-Coming_soon-red?style=flat-square&amp;logo=arxiv&amp;logoColor=white" height="22" alt="Paper: coming soon">
+  <a href="https://huggingface.co/MINT-SJTU/MorphAct-Metaworld"><img src="https://img.shields.io/badge/Models-Hugging_Face-blue?style=flat-square&amp;logo=huggingface&amp;logoColor=FFD21E" height="22" alt="Hugging Face models"></a>
 </p>
 
 <p align="center">
