@@ -31,25 +31,11 @@ Scaling robot learning brings diverse perceptual and control demands into one sh
 
 ### LIBERO
 
-| Backbone | Method | Spatial | Object | Goal | Long | Mean | Var. (pp²) |
-|---|---|---:|---:|---:|---:|---:|---:|
-| X-VLA | Baseline | 95.40 | 96.60 | 96.00 | 84.20 | 93.05 | — |
-| X-VLA | MorphAct | 98.67 | 99.87 | 97.07 | 93.20 | **97.20** | 0.0300 |
-| π0 | Baseline | 96.80 | 98.80 | 95.80 | 85.20 | 94.15 | — |
-| π0 | MorphAct | 98.00 | 99.60 | 96.60 | 92.40 | **96.65** | 0.0517 |
-| π0.5 | Baseline | 98.80 | 98.20 | 98.00 | 92.40 | 96.85 | — |
-| π0.5 | MorphAct | 98.33 | 99.67 | 98.87 | 97.53 | **98.60** | 0.0525 |
+[![LIBERO results: Baseline and MorphAct by backbone](assets/results-libero-en.svg)](assets/results-libero-en.svg)
 
 ### Meta-World
 
-| Backbone | Method | Easy | Medium | Hard | Very Hard | Avg. | Var. (pp²) |
-|---|---|---:|---:|---:|---:|---:|---:|
-| X-VLA | Baseline | 72.50 | 46.36 | 48.30 | 55.00 | 55.54 | — |
-| X-VLA | MorphAct | 83.99 | 58.18 | 55.28 | 55.00 | **63.11** | 1.8400 |
-| π0 | Baseline | 77.90 | 51.80 | 53.30 | 20.00 | 50.75 | — |
-| π0 | MorphAct | 82.44 | 71.36 | 56.39 | 58.00 | **67.05** | 0.6342 |
-| π0.5 | Baseline | 70.50 | 45.00 | 38.30 | 41.00 | 48.70 | — |
-| π0.5 | MorphAct | 85.77 | 59.85 | 66.39 | 45.67 | **64.42** | 0.3970 |
+[![Meta-World results: Baseline and MorphAct by backbone](assets/results-metaworld-en.svg)](assets/results-metaworld-en.svg)
 
 ## 🤗 Pretrained models
 

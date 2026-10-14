@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="354" viewBox="0 0 1024 354" role="img" aria-labelledby="title desc">
+<title id="title">Meta-World results</title>
+<desc id="desc">Baseline and MorphAct success rates grouped by backbone. All source values are retained. Gains are absolute percentage-point differences.</desc>
+<style>text{font-family:Arial,Helvetica,"PingFang SC",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect width="1024" height="354" fill="#FFFFFF"/>
+<rect x="24" y="18" width="976" height="44" fill="#35444B"/>
+<rect x="654" y="18" width="102" height="44" fill="#14745A"/>
+<rect x="884" y="18" width="116" height="44" fill="#14745A"/>
+<text x="40" y="40" text-anchor="start" dominant-baseline="middle" font-size="16" font-weight="600" fill="#FFFFFF">Backbone</text>
+<text x="148" y="40" text-anchor="start" dominant-baseline="middle" font-size="16" font-weight="600" fill="#FFFFFF">Method</text>
+<text x="318.0" y="40" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="600" fill="#FFFFFF">Easy</text>
+<text x="414.0" y="40" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="600" fill="#FFFFFF">Medium</text>
+<text x="510.0" y="40" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="600" fill="#FFFFFF">Hard</text>
+<text x="606.0" y="40" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="600" fill="#FFFFFF">Very Hard</text>
+<text x="705.0" y="40" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="600" fill="#FFFFFF">Avg. ↑</text>
+<text x="820.0" y="40" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="600" fill="#FFFFFF">Var. (pp²)</text>
+<text x="942.0" y="40" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="600" fill="#FFFFFF">Gain</text>
+<rect x="132" y="104" width="868" height="42" fill="#EDF5EF"/>
+<text x="78" y="104" text-anchor="middle" dominant-baseline="middle" font-size="20" font-weight="600" fill="#25323A">X-VLA</text>
+<text x="148" y="83" text-anchor="start" dominant-baseline="middle" font-size="17" font-weight="400" fill="#59636E">Baseline</text>
+<text x="350" y="83" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">72.50</text>
+<text x="446" y="83" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">46.36</text>
+<text x="542" y="83" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">48.30</text>
+<text x="638" y="83" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">55.00</text>
+<text x="740" y="83" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">55.54</text>
+<text x="868" y="83" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">—</text>
+<text x="984" y="83" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="gain">—</text>
+<text x="148" y="125" text-anchor="start" dominant-baseline="middle" font-size="17" font-weight="600" fill="#14745A">MorphAct</text>
+<text x="350" y="125" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="700" fill="#25323A" data-kind="value">83.99</text>
+<text x="446" y="125" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="700" fill="#25323A" data-kind="value">58.18</text>
+<text x="542" y="125" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="700" fill="#25323A" data-kind="value">55.28</text>
+<text x="638" y="125" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#25323A" data-kind="value">55.00</text>
+<text x="740" y="125" text-anchor="end" dominant-baseline="middle" font-size="21" font-weight="700" fill="#14745A" data-kind="value">63.11</text>
+<text x="868" y="125" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#25323A" data-kind="value">1.8400</text>
+<text x="984" y="125" text-anchor="end" dominant-baseline="middle" font-size="20" font-weight="700" fill="#14745A" data-kind="gain">+7.57</text>
+<rect x="132" y="200" width="868" height="42" fill="#EDF5EF"/>
+<text x="78" y="200" text-anchor="middle" dominant-baseline="middle" font-size="20" font-weight="600" fill="#25323A">π0</text>
+<text x="148" y="179" text-anchor="start" dominant-baseline="middle" font-size="17" font-weight="400" fill="#59636E">Baseline</text>
+<text x="350" y="179" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">77.90</text>
+<text x="446" y="179" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">51.80</text>
+<text x="542" y="179" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">53.30</text>
+<text x="638" y="179" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">20.00</text>
+<text x="740" y="179" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">50.75</text>
+<text x="868" y="179" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">—</text>
+<text x="984" y="179" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="gain">—</text>
+<text x="148" y="221" text-anchor="start" dominant-baseline="middle" font-size="17" font-weight="600" fill="#14745A">MorphAct</text>
+<text x="350" y="221" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="700" fill="#25323A" data-kind="value">82.44</text>
+<text x="446" y="221" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="700" fill="#25323A" data-kind="value">71.36</text>
+<text x="542" y="221" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="700" fill="#25323A" data-kind="value">56.39</text>
+<text x="638" y="221" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="700" fill="#25323A" data-kind="value">58.00</text>
+<text x="740" y="221" text-anchor="end" dominant-baseline="middle" font-size="21" font-weight="700" fill="#14745A" data-kind="value">67.05</text>
+<text x="868" y="221" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#25323A" data-kind="value">0.6342</text>
+<text x="984" y="221" text-anchor="end" dominant-baseline="middle" font-size="20" font-weight="700" fill="#14745A" data-kind="gain">+16.30</text>
+<rect x="132" y="296" width="868" height="42" fill="#EDF5EF"/>
+<text x="78" y="296" text-anchor="middle" dominant-baseline="middle" font-size="20" font-weight="600" fill="#25323A">π0.5</text>
+<text x="148" y="275" text-anchor="start" dominant-baseline="middle" font-size="17" font-weight="400" fill="#59636E">Baseline</text>
+<text x="350" y="275" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">70.50</text>
+<text x="446" y="275" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">45.00</text>
+<text x="542" y="275" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">38.30</text>
+<text x="638" y="275" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">41.00</text>
+<text x="740" y="275" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">48.70</text>
+<text x="868" y="275" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="value">—</text>
+<text x="984" y="275" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#59636E" data-kind="gain">—</text>
+<text x="148" y="317" text-anchor="start" dominant-baseline="middle" font-size="17" font-weight="600" fill="#14745A">MorphAct</text>
+<text x="350" y="317" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="700" fill="#25323A" data-kind="value">85.77</text>
+<text x="446" y="317" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="700" fill="#25323A" data-kind="value">59.85</text>
+<text x="542" y="317" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="700" fill="#25323A" data-kind="value">66.39</text>
+<text x="638" y="317" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="700" fill="#25323A" data-kind="value">45.67</text>
+<text x="740" y="317" text-anchor="end" dominant-baseline="middle" font-size="21" font-weight="700" fill="#14745A" data-kind="value">64.42</text>
+<text x="868" y="317" text-anchor="end" dominant-baseline="middle" font-size="18" font-weight="400" fill="#25323A" data-kind="value">0.3970</text>
+<text x="984" y="317" text-anchor="end" dominant-baseline="middle" font-size="20" font-weight="700" fill="#14745A" data-kind="gain">+15.72</text>
+</svg>
