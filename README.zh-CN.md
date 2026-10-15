@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://mint-sjtu.github.io/MorphAct.io/"><img src="https://img.shields.io/badge/Project-Page-green?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" height="22" alt="项目主页"></a>
-  <img src="https://img.shields.io/badge/Paper-Coming_soon-red?style=flat-square&amp;logo=arxiv&amp;logoColor=white" height="22" alt="论文即将发布">
+  <a href="https://arxiv.org/abs/2610.20019"><img src="https://img.shields.io/badge/Paper-arXiv-red?style=flat-square&amp;logo=arxiv&amp;logoColor=white" height="22" alt="arXiv 论文"></a>
   <a href="https://huggingface.co/MINT-SJTU/MorphAct-Metaworld"><img src="https://img.shields.io/badge/Models-Hugging_Face-blue?style=flat-square&amp;logo=huggingface&amp;logoColor=FFD21E" height="22" alt="Hugging Face 模型"></a>
 </p>
 
