@@ -86,3 +86,21 @@ The backbone integrations use OpenPI and X-VLA.
 ## License
 
 Original MorphAct code is licensed under the [MIT License](LICENSE). Third-party components retain their respective licenses; see [NOTICE](NOTICE).
+
+## Citation
+
+If you find MorphAct useful in your research, please cite:
+
+```bibtex
+@misc{liu2026morphact,
+  title         = {{MorphAct: Robot Policies Morphing with the Worlds They Act In}},
+  author        = {Ziyan Liu and Jiting Liu and Weihong Zhong and Wenda Yu
+                   and Yeqiu Chen and Jason Li and Xiaojiang Peng
+                   and Shuyuan Hu and Kai Wang and Bo Zhao},
+  year          = {2026},
+  eprint        = {2610.20019},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.RO},
+  url           = {https://arxiv.org/abs/2610.20019}
+}
+```

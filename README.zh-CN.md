@@ -86,3 +86,21 @@ bash tools/evaluate.sh pi05 metaworld
 ## 许可证
 
 MorphAct 自研代码采用 [MIT 许可证](LICENSE)。第三方组件沿用各自的许可证，详见 [NOTICE](NOTICE)。
+
+## 引用
+
+如果 MorphAct 对你的研究有帮助，请引用：
+
+```bibtex
+@misc{liu2026morphact,
+  title         = {{MorphAct: Robot Policies Morphing with the Worlds They Act In}},
+  author        = {Ziyan Liu and Jiting Liu and Weihong Zhong and Wenda Yu
+                   and Yeqiu Chen and Jason Li and Xiaojiang Peng
+                   and Shuyuan Hu and Kai Wang and Bo Zhao},
+  year          = {2026},
+  eprint        = {2610.20019},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.RO},
+  url           = {https://arxiv.org/abs/2610.20019}
+}
+```
