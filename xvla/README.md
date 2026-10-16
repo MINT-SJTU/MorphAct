@@ -15,14 +15,14 @@ source artifacts/envs/xvla/bin/activate
 
 ## Pretrained checkpoints
 
-Place the [X-VLA-Pt base model](https://huggingface.co/2toINF/X-VLA-Pt) in `ckpt/base/xvla-pt/`. Download the X-VLA Meta-World adapter from [MINT-SJTU/MorphAct-Metaworld](https://huggingface.co/MINT-SJTU/MorphAct-Metaworld). LIBERO pretrained checkpoints are coming soon.
+Place the [X-VLA-Pt base model](https://huggingface.co/2toINF/X-VLA-Pt) in `ckpt/base/xvla-pt/`. Download the X-VLA adapters for Meta-World and LIBERO from [MINT-SJTU/MorphAct](https://huggingface.co/MINT-SJTU/MorphAct).
 
 Place the downloaded adapter under `ckpt/adapters/`:
 
 | Benchmark | Adapter directory |
 |---|---|
 | Meta-World | `xvla-metaworld/` |
-| LIBERO | Coming soon |
+| LIBERO | `xvla-libero/` |
 
 Each adapter directory contains `adapter.safetensors` and `metadata.json`.
 

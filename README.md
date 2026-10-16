@@ -10,7 +10,7 @@
 <p align="center">
   <a href="https://mint-sjtu.github.io/MorphAct.io/"><img src="https://img.shields.io/badge/Project-Page-green?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" height="22" alt="Project Page"></a>
   <a href="https://arxiv.org/abs/2610.20019"><img src="https://img.shields.io/badge/Paper-arXiv-red?style=flat-square&amp;logo=arxiv&amp;logoColor=white" height="22" alt="Paper on arXiv"></a>
-  <a href="https://huggingface.co/MINT-SJTU/MorphAct-Metaworld"><img src="https://img.shields.io/badge/Models-Hugging_Face-blue?style=flat-square&amp;logo=huggingface&amp;logoColor=FFD21E" height="22" alt="Hugging Face models"></a>
+  <a href="https://huggingface.co/MINT-SJTU/MorphAct"><img src="https://img.shields.io/badge/Models-Hugging_Face-blue?style=flat-square&amp;logo=huggingface&amp;logoColor=FFD21E" height="22" alt="Hugging Face models"></a>
 </p>
 
 <p align="center">
@@ -39,15 +39,15 @@ Scaling robot learning brings diverse perceptual and control demands into one sh
 
 ## 🤗 Pretrained models
 
-Download the Meta-World pretrained adapters for all three backbones from [MINT-SJTU/MorphAct-Metaworld](https://huggingface.co/MINT-SJTU/MorphAct-Metaworld). LIBERO pretrained adapters are coming soon.
+Download pretrained adapters for Meta-World and LIBERO from [MINT-SJTU/MorphAct](https://huggingface.co/MINT-SJTU/MorphAct).
 
 Place each downloaded adapter under `ckpt/adapters/` using this directory name:
 
 | Backbone | Meta-World | LIBERO |
 |---|---|---|
-| π0 | `pi0-metaworld` | Coming soon |
-| π0.5 | `pi05-metaworld` | Coming soon |
-| X-VLA | `xvla-metaworld` | Coming soon |
+| π0 | `pi0-metaworld` | `pi0-libero` |
+| π0.5 | `pi05-metaworld` | `pi05-libero` |
+| X-VLA | `xvla-metaworld` | `xvla-libero` |
 
 Base-model paths and inference commands: [π0 / π0.5](openpi/README.md) · [X-VLA](xvla/README.md).
 

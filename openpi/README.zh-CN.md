@@ -43,12 +43,12 @@ CUDA_VISIBLE_DEVICES="" python artifacts/tools/convert_jax_model_to_pytorch.py \
 
 </details>
 
-从 [MINT-SJTU/MorphAct-Metaworld](https://huggingface.co/MINT-SJTU/MorphAct-Metaworld) 下载 Meta-World 适配器，并放入 `ckpt/adapters/`。LIBERO 预训练检查点 Coming soon。
+从 [MINT-SJTU/MorphAct](https://huggingface.co/MINT-SJTU/MorphAct) 下载 Meta-World 和 LIBERO 适配器，并放入 `ckpt/adapters/`。
 
 | 骨干 | Meta-World | LIBERO |
 |---|---|---|
-| π0 | `pi0-metaworld/` | Coming soon |
-| π0.5 | `pi05-metaworld/` | Coming soon |
+| π0 | `pi0-metaworld/` | `pi0-libero/` |
+| π0.5 | `pi05-metaworld/` | `pi05-libero/` |
 
 每个适配器目录包含 `adapter.safetensors`、`metadata.json` 和 `assets/` 目录。
 

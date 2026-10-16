@@ -43,12 +43,12 @@ For π0, use `pi0_base`, `--config-name pi0_libero`, and `--output-path ckpt/bas
 
 </details>
 
-Download the Meta-World adapters below from [MINT-SJTU/MorphAct-Metaworld](https://huggingface.co/MINT-SJTU/MorphAct-Metaworld) and place them under `ckpt/adapters/`. LIBERO pretrained checkpoints are coming soon.
+Download the Meta-World and LIBERO adapters below from [MINT-SJTU/MorphAct](https://huggingface.co/MINT-SJTU/MorphAct) and place them under `ckpt/adapters/`.
 
 | Backbone | Meta-World | LIBERO |
 |---|---|---|
-| π0 | `pi0-metaworld/` | Coming soon |
-| π0.5 | `pi05-metaworld/` | Coming soon |
+| π0 | `pi0-metaworld/` | `pi0-libero/` |
+| π0.5 | `pi05-metaworld/` | `pi05-libero/` |
 
 Each adapter directory contains `adapter.safetensors`, `metadata.json`, and its `assets/` directory.
 

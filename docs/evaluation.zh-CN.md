@@ -2,7 +2,7 @@
 
 [English](evaluation.md) | **简体中文**
 
-在 Meta-World 或 LIBERO 中运行 MorphAct 策略。以下命令均从仓库根目录执行。Meta-World 预训练适配器可从 [MINT-SJTU/MorphAct-Metaworld](https://huggingface.co/MINT-SJTU/MorphAct-Metaworld) 下载。LIBERO 预训练检查点 Coming soon。
+在 Meta-World 或 LIBERO 中运行 MorphAct 策略。以下命令均从仓库根目录执行。两个基准的预训练适配器均可从 [MINT-SJTU/MorphAct](https://huggingface.co/MINT-SJTU/MorphAct) 下载。
 
 ## 仿真环境
 

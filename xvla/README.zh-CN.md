@@ -15,14 +15,14 @@ source artifacts/envs/xvla/bin/activate
 
 ## 预训练权重
 
-将 [X-VLA-Pt 基座模型](https://huggingface.co/2toINF/X-VLA-Pt)放入 `ckpt/base/xvla-pt/`。从 [MINT-SJTU/MorphAct-Metaworld](https://huggingface.co/MINT-SJTU/MorphAct-Metaworld) 下载 X-VLA Meta-World 适配器。LIBERO 预训练检查点 Coming soon。
+将 [X-VLA-Pt 基座模型](https://huggingface.co/2toINF/X-VLA-Pt)放入 `ckpt/base/xvla-pt/`。从 [MINT-SJTU/MorphAct](https://huggingface.co/MINT-SJTU/MorphAct) 下载 X-VLA 的 Meta-World 和 LIBERO 适配器。
 
 将下载的适配器放入 `ckpt/adapters/`：
 
 | 基准 | 适配器目录 |
 |---|---|
 | Meta-World | `xvla-metaworld/` |
-| LIBERO | Coming soon |
+| LIBERO | `xvla-libero/` |
 
 每个适配器目录包含 `adapter.safetensors` 和 `metadata.json`。
 

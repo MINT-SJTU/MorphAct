@@ -10,7 +10,7 @@
 <p align="center">
   <a href="https://mint-sjtu.github.io/MorphAct.io/"><img src="https://img.shields.io/badge/Project-Page-green?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" height="22" alt="项目主页"></a>
   <a href="https://arxiv.org/abs/2610.20019"><img src="https://img.shields.io/badge/Paper-arXiv-red?style=flat-square&amp;logo=arxiv&amp;logoColor=white" height="22" alt="arXiv 论文"></a>
-  <a href="https://huggingface.co/MINT-SJTU/MorphAct-Metaworld"><img src="https://img.shields.io/badge/Models-Hugging_Face-blue?style=flat-square&amp;logo=huggingface&amp;logoColor=FFD21E" height="22" alt="Hugging Face 模型"></a>
+  <a href="https://huggingface.co/MINT-SJTU/MorphAct"><img src="https://img.shields.io/badge/Models-Hugging_Face-blue?style=flat-square&amp;logo=huggingface&amp;logoColor=FFD21E" height="22" alt="Hugging Face 模型"></a>
 </p>
 
 <p align="center">
@@ -39,15 +39,15 @@
 
 ## 🤗 预训练模型
 
-三种骨干的 Meta-World 预训练适配器可从 [MINT-SJTU/MorphAct-Metaworld](https://huggingface.co/MINT-SJTU/MorphAct-Metaworld) 下载。LIBERO 预训练权重 Coming soon。
+Meta-World 与 LIBERO 预训练适配器可从 [MINT-SJTU/MorphAct](https://huggingface.co/MINT-SJTU/MorphAct) 下载。
 
 将下载的适配器放入 `ckpt/adapters/`，目录名称如下：
 
 | 骨干 | Meta-World | LIBERO |
 |---|---|---|
-| π0 | `pi0-metaworld` | Coming soon |
-| π0.5 | `pi05-metaworld` | Coming soon |
-| X-VLA | `xvla-metaworld` | Coming soon |
+| π0 | `pi0-metaworld` | `pi0-libero` |
+| π0.5 | `pi05-metaworld` | `pi05-libero` |
+| X-VLA | `xvla-metaworld` | `xvla-libero` |
 
 基座模型路径与推理命令：[π0 / π0.5](openpi/README.zh-CN.md) · [X-VLA](xvla/README.zh-CN.md)。
 

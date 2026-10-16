@@ -2,7 +2,7 @@
 
 **English** | [简体中文](evaluation.zh-CN.md)
 
-Run MorphAct policies in Meta-World or LIBERO. Commands below run from the repository root. Download Meta-World pretrained adapters from [MINT-SJTU/MorphAct-Metaworld](https://huggingface.co/MINT-SJTU/MorphAct-Metaworld). LIBERO pretrained checkpoints are coming soon.
+Run MorphAct policies in Meta-World or LIBERO. Commands below run from the repository root. Download pretrained adapters for both benchmarks from [MINT-SJTU/MorphAct](https://huggingface.co/MINT-SJTU/MorphAct).
 
 ## Simulator setup
 
